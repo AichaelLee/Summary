@@ -9,3 +9,32 @@ git操作博大精深，细节很多，对于日常开发的我们而言，熟�
 * pull：指拉代码，把你Github上的远程仓库拉到本地计算机上。
 * push：指提交代码，把你本机上的项目提交到Github上的远程仓库。
 特别注意：本地的 .git文件是指本地仓库，.git目录下存放着所有文件的版本和关联信息，该目录在默认条件下是隐藏的。
+
+# git常用指令的用法
+1.源文件：
+
+* git remote -v ：指查看远程关联的仓库，包括源文件和上一层源文件。
+* git remote add origin + 网址：指添加一个源文件。
+* git remote add upstream + 网址：指添加一个上一层源文件，即fork项目的源文件。
+* git remote remove origin/upstream + 网址：指删除一个源文件或上一层源文件。
+
+2.初始化：
+
+* git clone + 网址：指把网址中对应的项目克隆到自己本机上。
+* git init：指初始化.git文件，里面没有链接信息，初始化后要重新建立与远程仓库的关联。
+* git pull upstream master：指把获得原项目更新。
+3.提交：
+
+* git add + 文件名：指把修改的某个文件添加到暂存区（指.git仓库）；
+* git add . :指把所有的修改文件添加到暂存区；
+* git commit -m "认真写为什么要做这次提交"：便于日后查阅和他人理解；
+* git push -u origin master:指把暂存区的文件提交到github中。
+* git log：指查看提交的历史记录。
+* dir：查看该文件的子目录。
+4.分支：
+
+* git status：查看所有情况；
+* git branch：指查看分支信息；
+* git branch + 分支名：指创建新的分支；
+* git checkout + 分支名：指切换分支。
+
