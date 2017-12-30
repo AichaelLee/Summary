@@ -41,17 +41,17 @@ git操作博大精深，细节很多，对于日常开发的我们而言，熟�
 * git checkout + 分支名：指切换分支。
 
 ### 常见的git操作的流程：
-一：克隆项目（可类比SVN上的checkout，从服务器获取工程代码）
-1.在本地的workspace下右击Git Bash Here打开：
-2.git clone + 仓库地址，把仓库里的文件克隆到本地：
+### 一：克隆项目（可类比SVN上的checkout，从服务器获取工程代码）
+* 1.在本地的workspace下右击Git Bash Here打开：
+* 2.git clone + 仓库地址，把仓库里的文件克隆到本地：
 这时本地出现了一个HerokuFW的文件夹
-3.cd 进入文件夹即可进行相关的git操作
-二：创建属于自己的分支，在自己分支进行开发，防止错误的代码可能污染主分支（非常重要，严禁向主分支提交代码！）
-二：git提交的通用过程（写完代码后想要向服务器端工程提交时要进行的操作）
-1.git status （查看当前文件的修改状态）；
-2.git add 某文件（添加某个修改文件）/ git add .(添加文件所有修改文件)；
-3.git commit -m "注释"（提交文件并备注本次提交的目的,便于日后查阅和他人理解）；
-4.git push -u origin yourbranchename（把暂存区的文件发送到git服务器上）
+* 3.cd 进入文件夹即可进行相关的git操作
+### 二：创建属于自己的分支，在自己分支进行开发，防止错误的代码可能污染主分支（非常重要，严禁向主分支提交代码！）
+### 三：git提交的通用过程（写完代码后想要向服务器端工程提交时要进行的操作）
+* 1.git status （查看当前文件的修改状态）；
+* 2.git add 某文件（添加某个修改文件）/ git add .(添加文件所有修改文件)；
+* 3.git commit -m "注释"（提交文件并备注本次提交的目的,便于日后查阅和他人理解）；
+* 4.git push -u origin yourbranchename（把暂存区的文件发送到git服务器上）
 代码提交完成！
 
 
@@ -68,14 +68,14 @@ FAQ:
 
 * 那origin 和 master 有什么区别呢？
 > origin 指向的是 repository ，master只是repository中默认创建的第一个分支，我们看到git push 的时候因为origin和master都是默认创建的，所以可以这样省略，但是这不是一个最佳实践，而且当你换一个branch再git push的时候，也会出现问题。
-# daizhengli
+# git操作流程
 你的本地仓库由 git 维护的三棵“树”组成。第一个是你的 工作目录，它持有实际文件；第二个是 暂存区（Index），它像个缓存区域，临时保存你的改动；最后是 HEAD，它指向你最后一次提交的结果。
 添加和提交
 你可以提出更改（把它们添加到暂存区），使用如下命令：
-git add <filename>
-git add *
+- git add <filename>
+- git add *
 这是 git 基本工作流程的第一步；使用如下命令以实际提交改动：
-git commit -m "代码提交信息"
+- git commit -m "代码提交信息"
 现在，你的改动已经提交到了 HEAD，但是还没到你的远端仓库
   
   
