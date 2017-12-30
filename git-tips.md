@@ -44,16 +44,28 @@ git操作博大精深，细节很多，对于日常开发的我们而言，熟�
 2.git clone + 仓库地址，把仓库里的文件克隆到本地：
 这时本地出现了一个HerokuFW的文件夹
 3.cd 进入文件夹即可进行相关的git操作
+二：创建属于自己的分支，在自己分支进行开发，防止错误的代码可能污染主分支（非常重要，严禁向主分支提交代码！）
 二：git提交的通用过程（写完代码后想要向服务器端工程提交时要进行的操作）
 1.git status （查看当前文件的修改状态）；
 2.git add 某文件（添加某个修改文件）/ git add .(添加文件所有修改文件)；
 3.git commit -m "注释"（提交文件并备注本次提交的目的）；
-4.git push -u origin master（把暂存区的文件发送到git服务器上）
+4.git push -u origin yourbranchename（把暂存区的文件发送到git服务器上）
 代码提交完成！
 
 
 
 
 #### 前提：只有进入到相应的文件目录后才能对git进行相关的操作
+
+
+
+
+FAQ:
+* git push origin master中origin是什么意思？
+> git为你默认创建了一个指向远端代码库的origin，在控制台内输入`git remote -v` 可以看到origin指向的位置就是远程代码库，总结来说origin就是一个名字，当你clone 托管在git服务器上的代码仓库时，git为你默认创建的指向这个远程代码库的标签
+
+* 那origin 和 master 有什么区别呢？
+> origin 指向的是 repository ，master只是repository中默认创建的第一个分支，我们看到git push 的时候因为origin和master都是默认创建的，所以可以这样省略，但是这不是一个最佳实践，而且当你换一个branch再git push的时候，也会出现问题。
+
 
 
