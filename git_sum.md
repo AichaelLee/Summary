@@ -13,6 +13,8 @@
 `$ git branch` <br>
 * 如果你想切换分支<br>
 `$ git checkout <name>`<br>
+* 把某个分支并到现在的分支上
+ `$ git merge 
 * 如果你想删除分支：<br>
 `$ git branch -d <name>`<br>
 * 如果你想更新你的本地仓库至最新改动，执行：<br>
