@@ -1,10 +1,10 @@
-What's 2WaySQL?
+2WaySQL是什么?
 --------
- 2WaySQL is just a plain old SQL-Template. You can specify parameters and conditions using special SQL comments. This way the template is executable using SQL client tools. This feature is based on the Japanese O/R mapping framework [S2JDBC](http://s2container.seasar.org/2.4/ja/s2jdbc.html).
+ 2WaySQL就是一个普通的通用SQL模板，你可以通过指定的SQL注释块指定参数和条件。这样当你使用SQL客户端工具的时候模板也是可以执行的。这一特性是建立在日本的O/R 映射框架[S2JDBC](http://s2container.seasar.org/2.4/ja/s2jdbc.html)之上的
 
 1.参数
 -----------
-你可以使用`/*parameter_name*/`注释来指定参数，但是这个注释块**不能**包含空格或数据库特定的优化器提示，否则** Mirage-SQL **解析器将不会把其识别为**参数**
+你可以使用`/*parameter_name*/`注释来指定参数，但是这个注释块**不能**包含空格或数据库特定的优化器提示，否则** Mirage-SQL ** 解析器将不会把其识别为**参数**
 
 这有一个最简单的参数注释的用法：
 
