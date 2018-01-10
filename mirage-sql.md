@@ -33,11 +33,11 @@ SELECT * FROM BOOK
 ORDER BY /*$orderByColumn*/BOOK_ID ASC
 ```
 
-**`Mirage-SQL`** replaces `/*$orderByColumn*/` with the given parameter string value (note the `$` character). This is mere string replacement, not place-holder as in the case of a the `PreparedStatement` above. So **`Mirage-SQL`** checks whether the semicolon is included in the string. If semicolon is included, Mirage-SQL throws an exception.
+**`Mirage-SQL`** 使用给定的参数字符串值替换`/*$orderByColumn*/`（注意`$`符号）。这仅仅是字符串的替换，而不像上面的`PreparedStatement`是占位符。所以**`Mirage-SQL`** 会检查字符串中是否包含有分号，如果包含分号，Mirage-SQL就会抛出异常。
 
 3.IF, ELSE, END
 ----------------
- You can assemble SQLs dynamically using `IF`, `ELSE` and `END` comments. The following SQL is a example of an `IF` comment usage. `IF` conditions are written as [OGNL](https://commons.apache.org/proper/commons-ognl/) expressions.
+你也可以使用`IF`, `ELSE` and `END`注释动态地合成SQL语句，下面这条SQL语句就是使用IF注释用法的一个示例，`IF`条件写成OGNL表达式的形式：
 
 ```sql
 SELECT * FROM BOOK
@@ -47,7 +47,7 @@ SELECT * FROM BOOK
 ORDER BY BOOK_ID ASC
 ```
 
- The `ELSE` comment is a little special. You have to write it in a single line comment (not a block comment) because it becomes an executable SQL. See the following example. When you execute it with an SQL-Client tool, the `ELSE` statement is disabled because it's written as single line comment.
+ `ELSE`注释有一点特别，你必须写成单行注释的形式（而不能以注释块的形式），因为他将成为一条被执行的SQL语句。看下面的示例。当你使用SQL客户端工具执行的时候，因为它被写成单行注释的形式，所以`ELSE`语句是不执行的。
 
 ```sql
 SELECT * FROM BOOK
@@ -61,7 +61,7 @@ ORDER BY BOOK_ID ASC
 
 4.BEGIN, END
 ------------
- At first, let's analyze the following SQL:
+ 首先，让我们分析下面的这条SQL语句：
 
 ```sql
 SELECT * FROM BOOK
@@ -74,7 +74,7 @@ WHERE
 /*END*/
 ```
 
-When `minPrice` is null and `maxPrice` is not null, this SQL becomes invalid as follows:
+当`minPrice`为空并且`maxPrice`不为空的时候，这条SQL语句实际是无效的：
 
 ```sql
 SELECT * FROM BOOK
@@ -82,14 +82,14 @@ WHERE
 AND PRICE <= ?
 ```
 
-Of course, when both of `minPrice` and `maxPrice` are null, it's also invalid:
+当然，当`minPrice`和`maxPrice`都为空的时候，它仍然是无效的：
 
 ```sql
 SELECT * FROM BOOK
 WHERE
 ```
 
-In these cases, by using `BEGIN` and `END`, the comment can be rewritten as follows:
+在这些case中，通过使用`BEGIN`和`END`，注释可以被写成如下形式：
 
 ```sql
 SELECT * FROM BOOK
@@ -105,5 +105,6 @@ SELECT * FROM BOOK
 ```
 
 This way, `BEGIN` - `END` comment cuts the enclosed range when the all inner expressions are false. And it also removes `AND` if it's in a first approved expression.
+这样，当所有的内联表达式都是false的时候，`BEGIN` - `END`注释块就减少了封闭的范围，而且如果它在第一个通过表达式中，也会移除`AND`。
 
-As a result, the conditional expression can be written well by a `BEGIN` - `END`  and `IF` - `END` comment combination.
+因此，通过`BEGIN` - `END`  and `IF` - `END`注释块的组合就能够很好地写出条件表达式了。
