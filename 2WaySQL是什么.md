@@ -1,6 +1,6 @@
 2WaySQL是什么?
 --------
- 2WaySQL就是一个普通的通用SQL模板，你可以通过指定的SQL注释块指定参数和条件。这样当你使用SQL客户端工具的时候模板也是可以执行的。这一特性是建立在日本的O/R 映射框架[S2JDBC](http://s2container.seasar.org/2.4/ja/s2jdbc.html)之上的
+ 2WaySQL就是一个普通的通用SQL模板，你可以通过特殊的SQL注释块指定参数和条件。这样当你使用SQL客户端工具的时候模板也是可以执行的。这一特性是建立在日本的O/R 映射框架[S2JDBC](http://s2container.seasar.org/2.4/ja/s2jdbc.html)之上的
 
 1.参数
 -----------
