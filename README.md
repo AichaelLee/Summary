@@ -34,3 +34,6 @@ A magical documentation site generator.
 ### swagger-ui 
 https://github.com/swagger-api/swagger-ui
 :Restful风格接口文档的自动生成和在线测试
+
+###一个可以读取CSV文件的插件：
+http://mygreen.github.io/super-csv-annotation/sphinx/index.html
