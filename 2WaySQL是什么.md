@@ -4,7 +4,7 @@
 
 1.参数
 -----------
-你可以使用`/*parameter_name*/`注释来指定参数，但是这个注释块**不能**包含空格或数据库特定的优化器提示，否则** Mirage-SQL ** 解析器将不会把其识别为**参数**
+你可以使用`/*parameter_name*/`注释来指定参数，但是这个注释块**不能**包含空格或数据库特定的优化器提示，否则**Mirage-SQL** 解析器将不会把其识别为**参数**
 
 这有一个最简单的参数注释的用法：
 
@@ -22,7 +22,6 @@ WHERE AUTHOR = ?
 ORDER BY BOOK_ID ASC
 ```
 
-2.String Replacement
 2.字符串替换
 --------------------
  `/*$parameter name*/` performs a simple string replacement. See the following example:
