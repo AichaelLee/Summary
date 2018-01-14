@@ -1,0 +1,23 @@
+### javascript中this的使用
+This指针的使用：
+谁调用就指向谁，比如：
+> window.m=100
+function test(){
+alert(this.m)
+}
+test();
+再比如：
+this.m=1000
+var obj={
+m:100,
+test:function(){
+    alert(this.m)
+  }
+}
+obj.test();
+输出100
+
+**这其中有一个特殊情况，就是闭包**
+
+
+**总而言之，this就是谁调用它就指向谁**
