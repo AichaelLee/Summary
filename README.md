@@ -1,45 +1,78 @@
-# Repository Summary
+个人技能图谱精进
 
-### og-aws https://github.com/AichaelLee/og-aws
-AWS相关的开发学习指导
+## 基本技能
+* 版本控制工具git的使用
+* linux的基本操作
+* github优秀开源项目
 
-### heroku_reference https://github.com/AichaelLee/heroku_reference
-Heroku学习过程中的总结和部分官方文档的翻译和认识
-### view-show https://github.com/AichaelLee/view-show
-当前是GitHub上的关于vue.js的博客，自己打算学习和参考一些优秀的代码到自己的博客中
-### DDFE-blog https://github.com/AichaelLee/DDFE-blog
-滴滴前端博客，里面篇数不多，但都是干货，其中还有两篇关于vue源码的解析，可以深入学习
-### Play-with-Algorithms https://github.com/AichaelLee/Play-with-Algorithms
-慕课网上关于算法教程示例代码，有C++ 和 java 两种语言版本的实现
-### N-blog https://github.com/AichaelLee/N-blog
-一个node.js的博客，但是目前自己还没有运行，主要因为作者的文档很详细，自己觉得会有值得借鉴的地方。
-### draw.io https://github.com/AichaelLee/draw.io https://github.com/AichaelLee/draw.io
-绘图软件draw.io在自己GitHub仓上的存储
-### git-standup https://github.com/AichaelLee/git-standup
-一个很好用的git插件，通过它你可以知道自己都提交了那些内容，并且可以查看自己的小伙伴也做了那些修改，自己做了中文的翻译
-### spring-boot-tutorial https://github.com/AichaelLee/spring-boot-tutorial
-老卫的开源书籍。spring boot学习教程
- ### awesome-github-vue https://github.com/AichaelLee/awesome-github-vue
- vue.js 开源项目库的集合
- ### git-tips https://github.com/git-tips/tips
- git的常用技巧
- ### essential java https://github.com/AichaelLee/essential-java
- java的编程要点，java中应用广泛的部分，包括java8 的新特性
+## 前端
+* css3
+ * sass
+ * bootstrap
+javascript
+* ES6
+ * ES6 标准与入门阅读
+ * ES6 电商SDK学习与理解
 
+* 前端面试题
+* 重难点理解
 
-### https://github.com/QingWei-Li/docsify 
-A magical documentation site generator.
-## Javascript类：
-### joplin:免费的开源笔记和待办事项
-### Docusaurus:
-静态网站创建工具
-### Doctify：生成vue.js风格的文档
+* vue.js
+ * 官方文档阅读与理解
+ * 优秀项目学习
+  * vue-admin-template
+ * 个人项目
+  * AZmall商城
+* webpack
+* node.js
+ * express 框架
 
 
+## 后端
+### spring
+* spring基础夯实
+  * 配置文件
+  * AOP编程
+  * IOC
+* springMVC 项目从零整合
+  * 分发器，适配器等
+* java8 新特性学习
+  * lambda 函数式编程
+  * stream API
 
-### swagger-ui 
-https://github.com/swagger-api/swagger-ui
-:Restful风格接口文档的自动生成和在线测试
+* 数据结构与算法
+* 框架：
+  * spring boot
+  * spring cloud
+  * dubbo
 
-###一个可以读取CSV文件的插件：
-http://mygreen.github.io/super-csv-annotation/sphinx/index.html
+
+* 项目学习
+  * happy mall 商城项目
+
+* spring security
+
+## 操作系统
+
+
+## 云计算
+* AWS 助理级解决方案师
+* Heroku 
+
+## 数据库
+**关系型数据库**
+* Postgres
+  * 官方文档
+
+**非关系型数据库**
+* Redis
+
+* mongodb
+## 新语言学习
+* python
+
+## 项目经验与总结
+
+## 软开发技能
+* 书籍的阅读
+
