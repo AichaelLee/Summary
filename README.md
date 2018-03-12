@@ -36,9 +36,14 @@ javascript
   * IOC
 * springMVC 项目从零整合
   * 分发器，适配器等
+
+  
 * java8 新特性学习
-  * lambda 函数式编程
+  * lambda 表达式
+  * 函数式接口
+  * 方法引用与构造器引用
   * stream API
+  * 新时间日期 API
 
 * 数据结构与算法
 * 框架：
