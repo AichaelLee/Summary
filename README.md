@@ -64,6 +64,9 @@ javascript
 * AWS 助理级解决方案师
 * Heroku 
 
+## DevOps
+* [jenkins](devOps/heroku+jenkins.md)
+
 ## 数据库
 **关系型数据库**
 * Postgres
@@ -81,4 +84,5 @@ javascript
 
 ## 软开发技能
 * 书籍的阅读
+
 
