@@ -1,8 +1,10 @@
 个人技能图谱精进
 
+
 ## 基本技能
 * 版本控制工具git的使用
 * linux的基本操作
+  * [linux安装jdk](back-end/linux安装jdk.md)
 * github优秀开源项目
 
 ## 前端
