@@ -7,4 +7,3 @@ sudo wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%
 
 配置maven环境变量：同样，在配置环境变量的时候因为profile是只读的，所以一直配不上环境变量，到最后按照这个网址的教程，写好了.sh 创建一个文件夹是mkdir，创建一个文件时touch 
 https://www.iteblog.com/archives/775.html
-文章标识符：20171212centosjdk
