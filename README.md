@@ -64,6 +64,8 @@ javascript
 
 ## 云计算
 * AWS 助理级解决方案师
+  * [S3](cloud-computing/s3.md)
+    * [Cross-Region Replication Monitor](cloud-computing/Cross-Region-ReplicationMonitor.md)
 * Heroku 
 
 ## DevOps
