@@ -5,6 +5,7 @@
 * 版本控制工具git的使用
 * linux的基本操作
   * [linux安装jdk](back-end/linux安装jdk.md)
+  * [linux常见命令](basic/linux-command.md)
 * github优秀开源项目
 
 ## 前端
