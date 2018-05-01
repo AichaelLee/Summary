@@ -7,6 +7,118 @@
 -h ：将文件容量以较易读的方式（GB，kB等）列出来  
 -R ：连同子目录的内容一起列出（递归列出），等于该目录下的所有文件都会显示出来  
 
+## chkconfig 
+chkconfig是管理系统服务(service)的命令行工具。所谓系统服务(service)，就是随系统启动而启动，随系统关闭而关闭的程序。
+
+chkconfig可以更新(启动或停止)和查询系统服务(service)运行级信息。更简单一点，chkconfig是一个用于维护/etc/rc[0-6].d目录的命令行工具。
+
+chkconfig 提供5个功能：
+
+1. 设置service启动信息
+
+```chkconfig name on/off/reset``` 
+1
+on、off、reset用于改变service的启动信息。 
+on表示开启，off表示关闭，reset表示重置。 
+默认情况下，on和off开关只对运行级2，3，4，5有效，reset可以对所有运行级有效。 
+例如，
+
+# chkconfig httpd on
+1
+2. 设置service运行级别
+
+# chkconfig --level levels
+1
+例如，
+
+# chkconfig --level 2345 httpd on
+1
+指定运行级为2,3,4,5 
+等级0表示：表示关机 
+等级1表示：单用户模式 
+等级2表示：无网络连接的多用户命令行模式 
+等级3表示：有网络连接的多用户命令行模式 
+等级4表示：不可用 
+等级5表示：带图形界面的多用户模式 
+等级6表示：重新启动
+
+3. 添加service
+
+# chkconfig --add name
+1
+添加一个chkconfig管理的service，并在/etc/rc[0-6].d 目录下添加相应的符号链接(symbolic links)。
+
+4. 移除service
+
+# chkconfig --del name
+1
+从chkconfig 管理名单中删除该service，并且删除 /etc/rc[0-6].d 目录下所有与之关联的符号链接(symbolic links)。
+
+5. 列出service的启动信息
+
+# chkconfig --list [name]
+1
+如果不指定name，会列出所有services的信息。
+
+每个service每个运行级别都会有一个启动和停止脚本；当切换运行级别时，init不会重启已经启动的service，也不会重新停止已经停止的service。
+
+下面举例说明
+
+(1).列出所有服务的启动情况
+
+$ chkconfig --list
+auditd          0:off   1:off   2:on    3:on    4:on    5:on    6:off
+redis           0:off   1:off   2:off   3:off   4:off   5:off   6:off
+restorecond     0:off   1:off   2:off   3:off   4:off   5:off   6:off
+rpcbind         0:off   1:off   2:on    3:on    4:on    5:on    6:off
+rpcgssd         0:off   1:off   2:off   3:on    4:on    5:on    6:off
+rpcsvcgssd      0:off   1:off   2:off   3:off   4:off   5:off   6:off
+rsyslog         0:off   1:off   2:on    3:on    4:on    5:on    6:off
+saslauthd       0:off   1:off   2:off   3:off   4:off   5:off   6:off
+smb             0:off   1:off   2:off   3:on    4:off   5:on    6:off
+。。。
+xinetd based services:
+    rsync:          off
+    swat:           off
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+(2)增加mysqld服务
+
+$ chkconfig --add mysqld
+1
+(3)删除mysqld服务
+
+$ chkconfig --del mysqld
+1
+(4)设置mysqld运行级别为2,3,4,5
+
+$ chkconfig --level 2345 httpd on
+1
+(5)列出mysqld 服务启动信息情况
+
+$ chkconfig --list mysqld
+mysqld          0:off   1:off   2:on    3:on    4:on    5:on    6:off
+1
+2
+(6)设置启动信息
+
+$ chkconfig mysqld on
+1
+默认的运行级别为2,3,4,5 
+实际上，与4中命令作用是一样的。
+
 ## grep命令
 该命令常用于分析一行的信息，若当中有我们所需要的信息，就将该行显示出来，该命令通常与管道命令一起使用，用于对一些命令的输出进行筛选加工等，它的简单语法为:
 > grep [-acinv] [--color=auto] '查找字符串' filename  
