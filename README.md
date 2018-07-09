@@ -23,6 +23,7 @@ javascript
 
 * vue.js
  * 官方文档阅读与理解
+ * vue-store-fronend
  * 优秀项目学习
   * vue-admin-template
  * 个人项目
