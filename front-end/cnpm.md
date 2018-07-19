@@ -7,5 +7,5 @@
 配置后可通过下面方式来验证是否成功 
 `npm config get registry`
 
-3.通过cnpm使用
+## 3.通过cnpm使用
 `npm install -g cnpm --registry=https://registry.npm.taobao.org`
