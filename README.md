@@ -76,6 +76,7 @@ javascript
 
 ## DevOps
 * [jenkins](devOps/heroku+jenkins.md)
+* [gitlab-ci+Heroku自动化部署](devOps/Heroku+gitlab-ci.md)
 
 ## 数据库
 **关系型数据库**
