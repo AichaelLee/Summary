@@ -18,7 +18,7 @@ javascript
  * ES6 标准与入门阅读
  * ES6 电商SDK学习与理解
 
-* 前端面试题
+* [前端面试题](front-end/javascript-interview.md)
 * 重难点理解
 
 * vue.js
