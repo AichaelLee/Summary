@@ -1,8 +1,8 @@
-## gitlab-ci与Heroku集成部署
+# gitlab-ci与Heroku集成部署
 
-### gitlab-ci Runner
-#### 安装runner
-#### 注册与配置runner
+## gitlab-ci Runner
+1.安装runner(省略)
+2.注册与配置runner(省略)
 
 **GitLab Runner　相关命令**
 
@@ -34,7 +34,7 @@ gitlab-runner --help
 查看runner状态
 `gitlab-runner status` 
 
-２.在项目根目录下添加文件.gitlab-ci.yml
+## 在项目根目录下添加文件.gitlab-ci.yml
 ```shell
 before_script:
   - echo "install dpl deploy tool" 
