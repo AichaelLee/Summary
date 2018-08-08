@@ -39,6 +39,7 @@ javascript
   * 配置文件
   * AOP编程
   * IOC
+* 常见的设计模式
 * springMVC 项目从零整合
   * 分发器，适配器等
 
