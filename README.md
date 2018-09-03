@@ -41,7 +41,6 @@ javascript
   * IOC
 * 常见的设计模式
 * springMVC 项目从零整合
-  * 分发器，适配器等
 
 * [quartz](back-end/quartz.md)
 
