@@ -6,6 +6,7 @@
 * linux的基本操作
   * [linux安装jdk](back-end/linux安装jdk.md)
   * [linux常见命令](basic/linux-command.md)
+* [计算机网络](basic/计算机网络.md)
 * github优秀开源项目
 * 其他
   * [maven生命周期](basic/maven生命周期.md)
