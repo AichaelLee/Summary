@@ -90,6 +90,7 @@ javascript
 
 **非关系型数据库**
 * Redis
+  * [redis持久化](back-end/redis持久化.md)
 
 * mongodb
 ## 新语言学习
