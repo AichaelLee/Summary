@@ -3,10 +3,24 @@
 所以用creat-cluste 工具创建了集群
 ### 大致步骤
 1.创建集群：
+
+
 `create-cluster create`
+
+
 2.第一次创建集群后不需要启动了，在集群关闭再次需要启动时：
+
+
 `create-cluster start`
+
+
 3.关闭集群：
+
+
 create-cluster stop.
+
+
 4.创建集群成功后就可以开心地连接了：
+
+
 `redis-cli -c -p 30001`
