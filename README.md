@@ -92,6 +92,7 @@ javascript
 * Redis
   * [redis持久化](back-end/redis持久化.md)
   * [redis分布式锁](back-end/redis分布式锁.md)
+  * [mac搭建redis集群](back-end/mac搭建redis集群.md)
 
 * mongodb
 ## 新语言学习
