@@ -24,3 +24,6 @@
 
 
 `redis-cli -c -p 30001`
+
+
+[官方文档地址](https://redis.io/topics/cluster-tutorial)
