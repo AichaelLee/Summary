@@ -17,7 +17,7 @@
 3.关闭集群：
 
 
-create-cluster stop.
+`create-cluster stop.`
 
 
 4.创建集群成功后就可以开心地连接了：
